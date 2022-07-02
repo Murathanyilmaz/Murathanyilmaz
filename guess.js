@@ -1,0 +1,50 @@
+'use strict';
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 10;
+let endGuess = false;
+let highscore = 0;
+document.querySelector(".score").textContent = score;
+function getValue() {
+    if (score > 0 && endGuess === false) {
+        const guess = Number(document.querySelector(".guess").value);
+        if (!guess) {
+            document.querySelector(".message").textContent = "⛔ No number!"
+        }
+        else if (guess != secretNumber) {
+            document.querySelector(".message").textContent = guess > secretNumber ? "📈 Too high!" : "📉 Too low!";
+            score--;
+            document.querySelector(".score").textContent = score;
+        }
+        else {
+            endGuess = true;
+            document.querySelector(".message").textContent = "🎉 Correct number!";
+            document.querySelector("body").style.backgroundColor = "#60b347";
+            document.querySelector(".number").textContent = secretNumber;
+            if (highscore < score) highscore = score;
+            document.querySelector(".highscore").textContent = highscore;
+        }
+        if (score == 0) {
+            endGuess = true;
+            document.querySelector(".message").textContent = "😥 You have lost!";
+            document.querySelector("body").style.backgroundColor = "maroon";
+            document.querySelector(".number").textContent = secretNumber;
+            ;
+        }
+    }
+}
+function resetValues() {
+    score = 10;
+    endGuess = false;
+    secretNumber = Math.trunc(Math.random() * 20) + 1;
+    document.querySelector("body").style = "background-color: #222";
+    document.querySelector(".message").textContent = "Start guessing..."
+    document.querySelector(".number").textContent = "?";
+    document.querySelector(".guess").value = "";
+    document.querySelector(".score").textContent = score;
+    document.querySelector(".message").textContent = "Start guessing...";
+}
+
+document.querySelector(".check").addEventListener("click", getValue);//mouseover, mouseout
+document.querySelector(".again").addEventListener("click", resetValues);//mouseover, mouseout
+
+

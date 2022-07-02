@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murathan Apps</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="piggame.css" rel="stylesheet" />
+    <link href="jumble.css" rel="stylesheet" />
+    <link href="guess.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navigation">
+        <h1 style="display:inline-block;margin:auto">Murathan Yılmaz - JS</h1>
+        <button id="jumbleButton">Jumble</button>
+        <button id="diceButton">Dice Game</button>
+        <button id="guessButton">Guess My Number</button>
+    </div>
+    <main class="content">
+        <div class="pig-game hidden">
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">43</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">24</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+
+            <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+            <button class="btn btn--new">🔄</button>
+            <button class="btn btn--roll">🎲</button>
+            <button class="btn btn--hold">📥</button>
+            <script src="piggame.js"></script>
+        </div>
+        <div class="jumble-game hidden">
+            <h1>Jumble</h1>
+            <h1 class="wordOfTheDay"></h1>
+            <table class="jumble">
+                <tr>
+                    <td id="harf1"></td>
+                    <td id="harf2"></td>
+                    <td id="harf3"></td>
+                    <td id="harf4"></td>
+                    <td id="harf5"></td>
+                </tr>
+                <tr>
+                    <td id="harf6"></td>
+                    <td id="harf7"></td>
+                    <td id="harf8"></td>
+                    <td id="harf9"></td>
+                    <td id="harf10"></td>
+                </tr>
+                <tr>
+                    <td id="harf11"></td>
+                    <td id="harf12"></td>
+                    <td id="harf13"></td>
+                    <td id="harf14"></td>
+                    <td id="harf15"></td>
+                </tr>
+                <tr>
+                    <td id="harf16"></td>
+                    <td id="harf17"></td>
+                    <td id="harf18"></td>
+                    <td id="harf19"></td>
+                    <td id="harf20"></td>
+                </tr>
+                <tr>
+                    <td id="harf21"></td>
+                    <td id="harf22"></td>
+                    <td id="harf23"></td>
+                    <td id="harf24"></td>
+                    <td id="harf25"></td>
+                </tr>
+                <tr>
+                    <td id="harf26"></td>
+                    <td id="harf27"></td>
+                    <td id="harf28"></td>
+                    <td id="harf29"></td>
+                    <td id="harf30"></td>
+                </tr>
+            </table>
+            <footer align="center" style="margin-top: 20px;">
+                <i>Created by Murathan YILMAZ
+                </i>
+            </footer>
+            <script src="jumble.js"></script>
+        </div>
+        <div class="guess-game hidden">
+            <header>
+                <h1>Guess My Number!</h1>
+                <p class="between">(Between 1 and 20)</p>
+                <button class="btn again">Again!</button>
+                <div class="number">?</div>
+            </header>
+            <main>
+                <section class="left">
+                    <input type="number" class="guess" />
+                    <button class="btn check">Check!</button>
+                </section>
+                <section class="right">
+                    <p class="message">Start guessing...</p>
+                    <p class="label-score">💯 Score: <span class="score"></span></p>
+                    <p class="label-highscore">
+                        🥇 Highscore: <span class="highscore">0</span>
+                    </p>
+                </section>
+            </main>
+            <script src="guess.js"></script>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

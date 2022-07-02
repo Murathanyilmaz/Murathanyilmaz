@@ -1,0 +1,26 @@
+.jumble-game {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background: linear-gradient(to top left, #90eef5, #f188ce);
+    border-radius: 9px;
+    padding-top: 10px;
+}
+
+.jumble-game h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.jumble {
+    margin: auto;
+}
+
+.jumble td {
+    width: 90px;
+    height: 90px;
+    border: 5px #222 solid;
+    font-size: 65px;
+    text-align: center;
+    pointer-events: none;
+    /*text-transform: uppercase;*/
+}
