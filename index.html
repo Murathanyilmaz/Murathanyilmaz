@@ -23,7 +23,7 @@
         <div class="pig-game hidden">
             <section class="player player--0 player--active">
                 <h2 class="name" id="name--0">Player 1</h2>
-                <p class="score" id="score--0">43</p>
+                <p class="score" id="score--0">0</p>
                 <div class="current">
                     <p class="current-label">Current</p>
                     <p class="current-score" id="current--0">0</p>
@@ -31,7 +31,7 @@
             </section>
             <section class="player player--1">
                 <h2 class="name" id="name--1">Player 2</h2>
-                <p class="score" id="score--1">24</p>
+                <p class="score" id="score--1">0</p>
                 <div class="current">
                     <p class="current-label">Current</p>
                     <p class="current-score" id="current--1">0</p>
@@ -42,7 +42,6 @@
             <button class="btn btn--new">🔄</button>
             <button class="btn btn--roll">🎲</button>
             <button class="btn btn--hold">📥</button>
-            <script src="piggame.js"></script>
         </div>
         <div class="jumble-game hidden">
             <h1>Jumble</h1>
@@ -91,11 +90,6 @@
                     <td id="harf30"></td>
                 </tr>
             </table>
-            <footer align="center" style="margin-top: 20px;">
-                <i>Created by Murathan YILMAZ
-                </i>
-            </footer>
-            <script src="jumble.js"></script>
         </div>
         <div class="guess-game hidden">
             <header>
@@ -111,15 +105,17 @@
                 </section>
                 <section class="right">
                     <p class="message">Start guessing...</p>
-                    <p class="label-score">💯 Score: <span class="score"></span></p>
+                    <p class="label-score-guess">💯 Score: <span class="score-guess"></span></p>
                     <p class="label-highscore">
                         🥇 Highscore: <span class="highscore">0</span>
                     </p>
                 </section>
             </main>
-            <script src="guess.js"></script>
         </div>
     </main>
+    <script src="piggame.js"></script>
+    <script src="jumble.js"></script>
+    <script src="guess.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 "use strict"
-const words = ["KALEM", "PİLOT", "ÇAYCI", "SÜTLÜ", "PRUVA", "KATİP", "ASLAN", "ÇUBUK", "TOPAL", "YALIN", "YILKI", "ZEBRA", "ÇAVUŞ", "ORMAN", "HAVUÇ"];
+const words = ["KALEM", "PİLOT", "ÇAYCI", "SÜTLÜ", "PRUVA", "KATİP", "ASLAN", "ÇUBUK", "TOPAL", "YALIN", "YILKI", "ZEBRA", "ÇAVUŞ", "ORMAN", "HAVUÇ", "ŞEBEK", "KERİZ", "BARZO"];
 const allowed = ["A", "B", "C", "Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "Q", "R", "S", "Ş", "T", "U", "Ü", "V", "W", "X", "Y", "Z",
     "a", "b", "c", "ç", "d", "e", "f", "g", "ğ", "h", "ı", "i", "j", "k", "l", "m", "n", "o", "ö", "p", "q", "r", "s", "ş", "t", "u", "ü", "v", "w", "x", "y", "z"];
 const wordNumber = Math.trunc(Math.random() * words.length);

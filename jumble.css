@@ -3,7 +3,7 @@
     font-weight: bold;
     background: linear-gradient(to top left, #90eef5, #f188ce);
     border-radius: 9px;
-    padding-top: 10px;
+    padding: 20px;
 }
 
 .jumble-game h1 {
