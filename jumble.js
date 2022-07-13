@@ -1,7 +1,9 @@
 "use strict"
-const words = ["KALEM", "PİLOT", "ÇAYCI", "SÜTLÜ", "PRUVA", "KATİP", "ASLAN", "ÇUBUK", "TOPAL", "YALIN", "YILKI", "ZEBRA", "ÇAVUŞ", "ORMAN", "HAVUÇ", "ŞEBEK", "KERİZ", "BARZO"];
+const words = ["KALEM", "PİLOT", "ÇAYCI", "SÜTLÜ", "PRUVA", "KATİP", "ASLAN", "ÇUBUK", "TOPAL", "YALIN", "YILKI", "ZEBRA", "ÇAVUŞ", "ORMAN", "HAVUÇ", "ŞEBEK", "KERİZ", "BARZO", "BEBEK", "BEŞİR", "BEŞİK", "KAVUN", "ÇİLEK", "BEŞER", "GÜMÜŞ", "ALTIN", "BRONZ", "SAVAŞ"];
 const allowed = ["A", "B", "C", "Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "Q", "R", "S", "Ş", "T", "U", "Ü", "V", "W", "X", "Y", "Z",
     "a", "b", "c", "ç", "d", "e", "f", "g", "ğ", "h", "ı", "i", "j", "k", "l", "m", "n", "o", "ö", "p", "q", "r", "s", "ş", "t", "u", "ü", "v", "w", "x", "y", "z"];
+const buttons = ["A", "B", "C", "Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "Q", "R", "S", "Ş", "T", "U", "Ü", "V", "W", "X", "Y", "Z"];
+let tiklanan;
 const wordNumber = Math.trunc(Math.random() * words.length);
 const wordOfTheDay = words[wordNumber];
 const wordOfTheDaySliced = [];
@@ -13,8 +15,23 @@ let letterLocation = 1;
 
 function endgame(sonuc) {
     letterLocation = 7;
-    alert(sonuc ? "Tebrikler kazandınız!" : "Kaybettiniz :(");
+    const bildir = sonuc ? "Tebrikler kazandınız!" : "Kaybettiniz :(";
+    alert(`${bildir}
+Doğru kelime: ${wordOfTheDay}`);
     endJumble = true;
+}
+
+
+const butonla = buttons.length;
+for (let i = 0; i < butonla; i++) {
+    let tiklanan = "#button" + buttons[i];
+    document.querySelector(tiklanan).addEventListener("click", () => {
+        if (letterLocation <= 5) {
+            document.querySelector("#buttonQ").blur();
+            document.querySelector(`#harf${letterLocation}`).textContent = buttons[i];
+            letterLocation++;
+        }
+    })
 }
 
 document.addEventListener('keydown', (event) => {
@@ -33,6 +50,7 @@ document.addEventListener('keydown', (event) => {
             }
             for (let i = 0; i < 5; i++) {
                 let mevcut = document.querySelector(`#harf${i + 1}`).textContent;
+                document.querySelector(`#button${mevcut}`).style.backgroundColor = "gray";
                 if (!wordOfTheDaySliced.includes(mevcut)) {
                     flags[i] = 0;
                 }

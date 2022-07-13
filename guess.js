@@ -48,3 +48,8 @@ document.querySelector(".check").addEventListener("click", getValue);//mouseover
 document.querySelector(".again").addEventListener("click", resetValues);//mouseover, mouseout
 
 
+/*document.addEventListener("click", (e) => {
+    e.target.style.display = "none";
+})
+*/
+

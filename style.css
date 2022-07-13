@@ -43,4 +43,6 @@ body {
     margin: 10px;
     width: auto;
     display: block;
+    border-radius: 9px;
+    border: 5px turquoise solid;
 }
