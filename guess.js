@@ -18,7 +18,7 @@ function getValue() {
         else {
             endGuess = true;
             document.querySelector(".message").textContent = "🎉 Correct number!";
-            document.querySelector(".guess-game").style.backgroundColor = "#60b347";
+            document.querySelector(".guess-game").style.backgroundColor = "#437534";
             document.querySelector(".number").textContent = secretNumber;
             if (highscore < score) highscore = score;
             document.querySelector(".highscore").textContent = highscore;

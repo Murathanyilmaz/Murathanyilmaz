@@ -2,16 +2,17 @@
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
+  border-radius: 9px;
 }
 
 .guess-game header {
   position: relative;
-  height: 30vh;
+  height: 15vh;
   border-bottom: 7px solid #eee;
 }
 
 .guess-game main {
-  height: 60vh;
+  height: 40vh;
   color: #eee;
   display: flex;
   align-items: center;
@@ -19,14 +20,12 @@
 }
 
 .guess-game .left {
-  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .guess-game .right {
-  width: 30rem;
   font-size: 20pt;
 }
 
@@ -46,9 +45,9 @@
   color: #333;
   font-size: 50pt;
   width: 150px;
-  height: 150px;
+  height: 100px;
   bottom: 0%;
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -57,7 +56,7 @@
 .guess-game .between {
   font-size: 14pt;
   position: absolute;
-  top: 10%;
+  top: 30%;
   right: 2%;
 }
 
@@ -84,9 +83,9 @@
   border: none;
   background-color: #eee;
   color: #222;
-  font-size: 2rem;
+  font-size: 20px;
   font-family: inherit;
-  width: 200px;
+  width: 150px;
   padding: 5px;
   cursor: pointer;
 }

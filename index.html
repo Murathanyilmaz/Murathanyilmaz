@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murathan Apps</title>
+    <title>Murathan Yılmaz - Portfolio Web Page</title>
     <link href="style.css" rel="stylesheet" />
     <link href="piggame.css" rel="stylesheet" />
     <link href="jumble.css" rel="stylesheet" />
     <link href="guess.css" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
     <div class="navigation">
-        <h1 style="display:inline-block;margin:auto">Murathan Yılmaz - JS</h1>
-        <button id="jumbleButton">Jumble</button>
-        <button id="diceButton">Dice Game</button>
-        <button id="guessButton">Guess My Number</button>
+        <h1>Murathan Yılmaz</h1>
+        <button class="menu">≡</button>
+        <div class="butonlar hidden">
+            <button class="nav_button" id="portfolioButton">3D Portfolio</button>
+            <button class="nav_button" id="jumbleButton">Jumble</button>
+            <button class="nav_button" id="diceButton">Dice Game</button>
+            <button class="nav_button" id="guessButton">Guess My Number</button>
+        </div>
     </div>
     <main class="content">
         <div class="pig-game hidden">
@@ -43,8 +48,8 @@
             <button class="btn btn--roll">🎲</button>
             <button class="btn btn--hold">📥</button>
         </div>
-        <div class="jumble-game">
-            <h1>Jumble</h1>
+        <div class="jumble-game hidden">
+            <h1 style="text-align: center;font-size: 40px;"><i>Jumble</i></h1>
             <h1 class="wordOfTheDay"></h1>
             <table class="jumble">
                 <tr>
@@ -151,6 +156,44 @@
                     </p>
                 </section>
             </main>
+        </div>
+        <div class="portfolio hidden">
+            <div>
+                <img width="30%" src="img/ucboyut1.png" />
+                <img width="30%" src="img/ucboyut2.png" />
+                <img width="30%" src="img/ucboyut3.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut4.jpg" />
+                <img width="30%" src="img/ucboyut5.png" />
+                <img width="30%" src="img/ucboyut6.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut7.png" />
+                <img width="30%" src="img/ucboyut8.png" />
+                <img width="30%" src="img/ucboyut9.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut10.png" />
+                <img width="30%" src="img/ucboyut11.png" />
+                <img width="30%" src="img/ucboyut12.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut13.png" />
+                <img width="30%" src="img/ucboyut14.png" />
+                <img width="30%" src="img/ucboyut15.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut16.png" />
+            </div>
+            <div>
+                <video width="40%" src="vid/video1.mkv" controls></video>
+                <video width="40%" src="vid/video2.mkv" controls></video>
+            </div>
+            <iframe width="720" height="480" src="https://www.youtube.com/embed/pka-EMhfD-8" title="Animation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </main>
     <script src="piggame.js"></script>

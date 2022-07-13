@@ -3,7 +3,7 @@ const words = ["KALEM", "PİLOT", "ÇAYCI", "SÜTLÜ", "PRUVA", "KATİP", "ASLAN
 const allowed = ["A", "B", "C", "Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "Q", "R", "S", "Ş", "T", "U", "Ü", "V", "W", "X", "Y", "Z",
     "a", "b", "c", "ç", "d", "e", "f", "g", "ğ", "h", "ı", "i", "j", "k", "l", "m", "n", "o", "ö", "p", "q", "r", "s", "ş", "t", "u", "ü", "v", "w", "x", "y", "z"];
 const buttons = ["A", "B", "C", "Ç", "D", "E", "F", "G", "Ğ", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "Q", "R", "S", "Ş", "T", "U", "Ü", "V", "W", "X", "Y", "Z"];
-let tiklanan;
+let tiklanan = [];
 const wordNumber = Math.trunc(Math.random() * words.length);
 const wordOfTheDay = words[wordNumber];
 const wordOfTheDaySliced = [];
@@ -21,16 +21,14 @@ Doğru kelime: ${wordOfTheDay}`);
     endJumble = true;
 }
 
-
-const butonla = buttons.length;
-for (let i = 0; i < butonla; i++) {
-    let tiklanan = "#button" + buttons[i];
-    document.querySelector(tiklanan).addEventListener("click", () => {
+for (let i = 0; i < buttons.length; i++) {
+    tiklanan[i] = "#button" + buttons[i];
+    document.querySelector(tiklanan[i]).addEventListener("click", () => {
         if (letterLocation <= 5) {
-            document.querySelector("#buttonQ").blur();
             document.querySelector(`#harf${letterLocation}`).textContent = buttons[i];
             letterLocation++;
         }
+        document.querySelector(tiklanan[i]).blur();
     })
 }
 

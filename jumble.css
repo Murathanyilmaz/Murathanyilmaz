@@ -1,13 +1,9 @@
 .jumble-game {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    background: linear-gradient(to top left, #90eef5, #f188ce);
-    padding: 20px;
-}
-
-.jumble-game h1 {
-    text-align: center;
-    font-size: 50px;
+    background: linear-gradient(to bottom, #e48c69, #f59baa);
+    padding: 10px;
+    border-radius: 9px;
 }
 
 .jumble {
@@ -17,7 +13,7 @@
 .jumble td {
     width: 90px;
     height: 90px;
-    border: 5px #222 solid;
+    border: 3px #222 solid;
     font-size: 65px;
     text-align: center;
     pointer-events: none;
@@ -25,11 +21,14 @@
 }
 
 .harfler {
-    margin: 5px;
+    margin: 2px;
     width: 50px;
     height: 50px;
     font-size: 18pt;
     font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
 }
 
 .keyboard {
