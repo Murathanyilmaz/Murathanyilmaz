@@ -14,18 +14,10 @@ let sayac = 6;
 let letterLocation = 1;
 let puan = 0;
 
-function endgame(sonuc) {
-    letterLocation = 7;
-    const bildir = sonuc ? "Tebrikler kazandınız!" : "Kaybettiniz :(";
-    alert(`${bildir}
-Doğru kelime: ${wordOfTheDay}`);
-    endJumble = true;
-}
-
 for (let i = 0; i < buttons.length; i++) {
     tiklanan[i] = "button" + buttons[i];
     document.getElementById(tiklanan[i]).addEventListener("click", () => {
-        if (letterLocation <= 5) {
+        if (letterLocation <= 5 && endJumble == false) {
             document.getElementById(`harf${letterLocation}`).textContent = buttons[i];
             letterLocation++;
         }
@@ -33,9 +25,11 @@ for (let i = 0; i < buttons.length; i++) {
     })
 }
 document.getElementById("buttonBackspace").addEventListener("click", () => {
-    letterLocation--;
-    document.querySelector(`#harf${letterLocation}`).textContent = "";
-    document.querySelector(tiklanan[i]).blur();
+    if (endJumble == false && letterLocation > 1) {
+        letterLocation--;
+        document.querySelector(`#harf${letterLocation}`).textContent = "";
+        document.getElementById("buttonBackspace").blur();
+    }
 })
 
 
@@ -118,3 +112,83 @@ document.addEventListener('keydown', (event) => {
         }
     }
 })
+
+
+document.getElementById("buttonEnter").addEventListener("click", (event) => {
+    if (endJumble == false & letterLocation == 6) {
+        for (let i = 0; i < 5; i++) {
+            wordOfTheDaySliced[i] = wordOfTheDay.substring(i, i + 1);
+        }
+        for (let i = 0; i < 5; i++) {
+            let mevcut = document.querySelector(`#harf${i + 1}`).textContent;
+            if (!wordOfTheDaySliced.includes(mevcut)) {
+                flags[i] = 0;
+                flaggedFor[i] = mevcut;
+            }
+            else {
+                if (wordOfTheDaySliced[i] == mevcut) {
+                    flags[i] = 2;
+                    flaggedFor[i] = mevcut;
+                    wordOfTheDaySliced[i] = "?";
+                    for (let k = 0; k < 5; k++) {
+                        if (flags[k] == 1 && flaggedFor[k] == mevcut) {
+                            flags[k] = 0;
+                            break;
+                        }
+                    }
+                }
+                else {
+                    flags[i] = 1;
+                    flaggedFor[i] = mevcut;
+                    for (let k = 0; k < 5; k++) {
+                        if (k != i && flags[k] == 1 && flaggedFor[k] == mevcut) {
+                            flags[k] = 0;
+                            break;
+                        }
+                    }
+                }
+            }
+            console.log(flags[i], flaggedFor[i], mevcut)
+        }
+        for (let i = 0; i < 5; i++) {
+            if (flags[i] == 0) {
+                document.getElementById(`harf${i + 1}`).style.backgroundColor = "#d8d8d8";
+                document.getElementById(`button${flaggedFor[i]}`).style.backgroundColor = "gray";
+            }
+            else if (flags[i] == 1) {
+                document.getElementById(`harf${i + 1}`).style.backgroundColor = "orange";
+                document.getElementById(`button${flaggedFor[i]}`).style.backgroundColor = "orange";
+            }
+            else if (flags[i] == 2) {
+                document.getElementById(`harf${i + 1}`).style.backgroundColor = "#0b812f";
+                document.getElementById(`button${flaggedFor[i]}`).style.backgroundColor = "#0b812f";
+                puan++;
+            }
+        }
+        if (puan == 5) {
+            endgame(true);
+        }
+        puan = 0;
+        for (let i = -25; i <= 30; i++) {
+            if (document.getElementById(`harf${i}`)) {
+                document.getElementById(`harf${i}`).id = `harf${i - 5}`;
+            }
+        }
+        sayac--
+        if (sayac > 0) {
+            letterLocation = 1;
+        }
+        else {
+            endgame(false);
+        }
+    }
+    document.getElementById("buttonEnter").blur();
+})
+
+function endgame(sonuc) {
+    letterLocation = 7;
+    const bildir = sonuc ? "Tebrikler kazandınız!" : "Kaybettiniz :(";
+    alert(`${bildir}
+Doğru kelime: ${wordOfTheDay}`);
+    endJumble = true;
+}
