@@ -2,8 +2,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     background: linear-gradient(to bottom, #e48c69, #f59baa);
-    padding-bottom: 20px;
-    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 1px;
     border-radius: 9px;
 }
 
@@ -23,20 +23,20 @@
 
 .harfler {
     margin-bottom: 4px;
-    width: 2rem;
-    height: 3.5rem;
-    font-size: 12pt;
+    width: 1.5rem;
+    height: 2.5rem;
+    font-size: 10pt;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;
 }
 
 .harfler2 {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 12pt;
+    width: 2rem;
+    height: 2.5rem;
+    font-size: 10pt;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
