@@ -61,12 +61,12 @@ body {
     text-align: center;
     margin: auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 95%;
+    width: auto;
 }
 
 .content {
-    margin: 15px auto auto auto;
-    width: 95%;
+    margin: 10px auto auto auto;
+    width: auto;
     display: block;
 }
 

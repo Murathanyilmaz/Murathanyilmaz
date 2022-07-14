@@ -2,7 +2,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     background: linear-gradient(to bottom, #e48c69, #f59baa);
-    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
     border-radius: 9px;
 }
 
@@ -11,21 +12,33 @@
 }
 
 .jumble td {
-    width: 90px;
-    height: 90px;
+    width: 9vh;
+    height: 9vh;
     border: 3px #222 solid;
-    font-size: 65px;
+    font-size: 50px;
     text-align: center;
     pointer-events: none;
     /*text-transform: uppercase;*/
 }
 
 .harfler {
-    margin: 2px;
-    width: 50px;
-    height: 50px;
-    font-size: 18pt;
+    margin-bottom: 4px;
+    width: 2rem;
+    height: 3.5rem;
+    font-size: 12pt;
     font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.harfler2 {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;
