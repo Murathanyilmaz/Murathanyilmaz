@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murathan Yılmaz - Portfolio Web Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="piggame.css" rel="stylesheet" />
+    <link href="jumble.css" rel="stylesheet" />
+    <link href="guess.css" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="icon">
+            <img width=100px src="img/logo.png" />
+        </div>
+        <div class="butonlar">
+            <p class="nav_button" id="portfolioButton">3D Portfolio</p>
+            <p class="nav_button" id="jumbleButton">Jumble</p>
+            <p class="nav_button" id="diceButton">Dice Game</p>
+            <p class="nav_button" id="guessButton">Guess My Number</p>
+            <p class="nav_button" id="cvButton">CV</p>
+            <p class="nav_button" id="contactButton">Contact Me</p>
+        </div>
+    </div>
+    <main class="content">
+        <div class="pig-game hidden">
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+
+            <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+            <button class="btn btn--new">🔄</button>
+            <button class="btn btn--roll">🎲</button>
+            <button class="btn btn--hold">📥</button>
+        </div>
+        <div class="jumble-game hidden">
+            <p style="text-align: center;font-size: 30px;margin:10px"><i>Jumble</i></p>
+            <table class="jumble">
+                <tr>
+                    <td id="harf1"></td>
+                    <td id="harf2"></td>
+                    <td id="harf3"></td>
+                    <td id="harf4"></td>
+                    <td id="harf5"></td>
+                </tr>
+                <tr>
+                    <td id="harf6"></td>
+                    <td id="harf7"></td>
+                    <td id="harf8"></td>
+                    <td id="harf9"></td>
+                    <td id="harf10"></td>
+                </tr>
+                <tr>
+                    <td id="harf11"></td>
+                    <td id="harf12"></td>
+                    <td id="harf13"></td>
+                    <td id="harf14"></td>
+                    <td id="harf15"></td>
+                </tr>
+                <tr>
+                    <td id="harf16"></td>
+                    <td id="harf17"></td>
+                    <td id="harf18"></td>
+                    <td id="harf19"></td>
+                    <td id="harf20"></td>
+                </tr>
+                <tr>
+                    <td id="harf21"></td>
+                    <td id="harf22"></td>
+                    <td id="harf23"></td>
+                    <td id="harf24"></td>
+                    <td id="harf25"></td>
+                </tr>
+                <tr>
+                    <td id="harf26"></td>
+                    <td id="harf27"></td>
+                    <td id="harf28"></td>
+                    <td id="harf29"></td>
+                    <td id="harf30"></td>
+                </tr>
+            </table>
+            <div class="keyboard">
+                <div>
+                    <button class="harfler" id="buttonQ">Q</button>
+                    <button class="harfler" id="buttonW">W</button>
+                    <button class="harfler" id="buttonE">E</button>
+                    <button class="harfler" id="buttonR">R</button>
+                    <button class="harfler" id="buttonT">T</button>
+                    <button class="harfler" id="buttonY">Y</button>
+                    <button class="harfler" id="buttonU">U</button>
+                    <button class="harfler" id="buttonI">I</button>
+                    <button class="harfler" id="buttonO">O</button>
+                    <button class="harfler" id="buttonP">P</button>
+                    <button class="harfler" id="buttonĞ">Ğ</button>
+                    <button class="harfler" id="buttonÜ">Ü</button>
+                </div>
+                <div>
+                    <button class="harfler" id="buttonA">A</button>
+                    <button class="harfler" id="buttonS">S</button>
+                    <button class="harfler" id="buttonD">D</button>
+                    <button class="harfler" id="buttonF">F</button>
+                    <button class="harfler" id="buttonG">G</button>
+                    <button class="harfler" id="buttonH">H</button>
+                    <button class="harfler" id="buttonJ">J</button>
+                    <button class="harfler" id="buttonK">K</button>
+                    <button class="harfler" id="buttonL">L</button>
+                    <button class="harfler" id="buttonŞ">Ş</button>
+                    <button class="harfler" id="buttonİ">İ</button>
+                </div>
+                <div>
+                    <button class="harfler2" id="buttonBackspace">Sil</button>
+                    <button class="harfler" id="buttonZ">Z</button>
+                    <button class="harfler" id="buttonX">X</button>
+                    <button class="harfler" id="buttonC">C</button>
+                    <button class="harfler" id="buttonV">V</button>
+                    <button class="harfler" id="buttonB">B</button>
+                    <button class="harfler" id="buttonN">N</button>
+                    <button class="harfler" id="buttonM">M</button>
+                    <button class="harfler" id="buttonÖ">Ö</button>
+                    <button class="harfler" id="buttonÇ">Ç</button>
+                    <button class="harfler2" id="buttonEnter">✔</button>
+                </div>
+            </div>
+        </div>
+        <div class="guess-game hidden">
+            <header>
+                <h1>Guess My Number!</h1>
+                <p class="between">(Between 1 and 20)</p>
+                <button class="btn again">Again!</button>
+                <div class="number">?</div>
+            </header>
+            <main>
+                <section class="left">
+                    <input type="number" class="guess" />
+                    <button class="btn check">Check!</button>
+                </section>
+                <section class="right">
+                    <p class="message">Start guessing...</p>
+                    <p class="label-score-guess">💯 Score: <span class="score-guess"></span></p>
+                    <p class="label-highscore">
+                        🥇 Highscore: <span class="highscore">0</span>
+                    </p>
+                </section>
+            </main>
+        </div>
+        <div class="portfolio hidden">
+            <div>
+                <img width="30%" src="img/ucboyut1.png" />
+                <img width="30%" src="img/ucboyut2.png" />
+                <img width="30%" src="img/ucboyut3.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut5.png" />
+                <img width="30%" src="img/ucboyut6.png" />
+                <img width="30%" src="img/ucboyut7.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut8.png" />
+                <img width="30%" src="img/ucboyut9.png" />
+                <img width="30%" src="img/ucboyut10.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut11.png" />
+                <img width="30%" src="img/ucboyut12.png" />
+                <img width="30%" src="img/ucboyut13.png" />
+            </div>
+            <div>
+                <img width="30%" src="img/ucboyut14.png" />
+                <img width="30%" src="img/ucboyut15.png" />
+                <img width="30%" src="img/ucboyut16.png" />
+            </div>
+            <div>
+                <video width="40%" src="vid/video1.mkv" controls></video>
+                <video width="40%" src="vid/video2.mkv" controls></video>
+            </div>
+            <!--<iframe width="720" height="480" src="https://www.youtube.com/embed/pka-EMhfD-8" title="Animation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>-->
+        </div>
+        <div class="cv hidden">
+            <object width="100%" height="800px" data="doc/MurathanYilmaz_CV_ENG.pdf" type="application/pdf">
+                <iframe src="https://docs.google.com/viewer?url=your_url_to_pdf&embedded=true"></iframe>
+            </object>
+        </div>
+        <div class="contact hidden" style="text-align: center;margin-bottom: 50px;margin-top: 30px">
+            <h2>Contact me</h2>
+            <a style="font-size:15pt;color:#000000;text-decoration:none" href="https://github.com/Murathanyilmaz">via
+                GitHub 🐈</a><br><br>
+            <a style="font-size:15pt;color:#000000;text-decoration:none" href="mailto:murathanonuryilmaz@gmail.com">via
+                e-mail 📧</a>
+        </div>
+    </main>
+    <footer style="text-align:center;font-family:Arial;margin:10px"><i>Copyright © 2022. Murathan Inc.</i></footer>
+    <script src="piggame.js"></script>
+    <script src="jumble.js"></script>
+    <script src="guess.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
