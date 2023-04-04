@@ -10,33 +10,30 @@
     <link href="piggame.css" rel="stylesheet" />
     <link href="jumble.css" rel="stylesheet" />
     <link href="guess.css" rel="stylesheet" />
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/sitelogo.png">
 </head>
 
 <body>
     <div class="navigation">
         <div class="icon">
-            <img width=100px src="img/logo.png" />
-        </div>
-        <div>
-            <h3>Welcome! Below, you can find links to some of my projects about 3D design and JavaScript!</h3>
+            <img width=250px src="img/sitelogo.png" />
+            <!--<h3>Welcome! Below, you can find some of my 3D design and JavaScript projects.</h3>-->
         </div>
         <div class="butonlar">
-            <p class="nav_button" id="portfolioButton">3D Portfolio</p>
+            <p class="nav_button" id="portfolioButton">2D/3D</p>
             <p class="nav_button" id="jumbleButton">Jumble</p>
             <p class="nav_button" id="diceButton">Dice Game</p>
             <p class="nav_button" id="guessButton">Guess My Number</p>
         </div>
     </div>
     <main class="content">
+        <div class="pig-game-desc hidden">
+            <h3>2-Player dice game created with JavaScript. Roll the dice and collect points and hold them in your
+                bucket.<br>
+                If you roll 1, it's your opponents turn. First player to reach 100 points wins!
+            </h3>
+        </div>
         <div class="pig-game hidden">
-            <!--<div class="description">
-                <h3>2 player dice game created with JavaScript.<br>
-                    Roll the dice and collect points and hold them in your bucket.<br>
-                    If you roll 1, it's your opponents turn.<br>
-                    First player to reach 100 points wins!
-                </h3>
-            </div>-->
             <section class="player player--0 player--active">
                 <h2 class="name" id="name--0">Player 1</h2>
                 <p class="score" id="score--0">0</p>
@@ -60,13 +57,13 @@
             <button class="btn btn--hold">📥</button>
         </div>
         <div class="jumble-game hidden">
+            <p style="text-align: center;font-size: 30px;margin:10px"><i>Jumble</i></p>
             <div class="description">
                 <h3>A Wordle-like game created with JavaScript.<br>
                     You can use your keyboard or buttons below to guess
                     the Word of the Day!
                 </h3>
             </div>
-            <p style="text-align: center;font-size: 30px;margin:10px"><i>Jumble</i></p>
             <table class="jumble">
                 <tr>
                     <td id="harf1"></td>
@@ -180,31 +177,60 @@
         </div>
         <div class="portfolio hidden">
             <div class="description">
-                <h3>3D models created with <font color="#dd6e13">Blender.</font>
+                <h3>3D models are created with <font color="#dd6e13">Blender.</font>
                 </h3>
             </div>
+            <h3>Generic</h3>
             <div>
-                <img width="20%" src="img/ucboyut1.png" />
-                <img width="20%" src="img/ucboyut2.png" />
-                <img width="20%" src="img/ucboyut3.png" />
-                <img width="20%" src="img/ucboyut5.png" />
+                <img width="20%" src="img/hobi1.png" />
+                <img width="20%" src="img/hobi2.png" />
+                <img width="20%" src="img/hobi3.png" />
+                <img width="20%" src="img/hobi4.png" />
             </div>
             <div>
-                <img width="20%" src="img/ucboyut6.png" />
-                <img width="20%" src="img/ucboyut7.png" />
-                <img width="20%" src="img/ucboyut8.png" />
-                <img width="20%" src="img/ucboyut9.png" />
+                <img width="20%" src="img/hobi5.png" />
+                <img width="20%" src="img/hobi6.png" />
+                <img width="20%" src="img/hobi7.png" />
+                <img width="20%" src="img/hobi8.png" />
+            </div>
+            <h3>Ship Parts</h3>
+            <div>
+                <img width="20%" src="img/deniz1.png" />
+                <img width="20%" src="img/deniz2.png" />
+                <img width="20%" src="img/deniz3.png" />
+                <img width="20%" src="img/deniz4.png" />
             </div>
             <div>
-                <img width="20%" src="img/ucboyut10.png" />
-                <img width="20%" src="img/ucboyut11.png" />
-                <img width="20%" src="img/ucboyut12.png" />
-                <img width="20%" src="img/ucboyut13.png" />
+                <img width="20%" src="img/deniz5.png" />
+                <img width="20%" src="img/deniz6.png" />
+                <img width="20%" src="img/deniz7.png" />
+                <img width="20%" src="img/deniz8.png" />
+            </div>
+            <h3>Mobile Apps Images</h3>
+            <div>
+                <img width="12%" src="img/mobil1.jpg" />
+                <img width="12%" src="img/mobil2.jpg" />
+                <img width="12%" src="img/mobil3.jpg" />
+                <img width="12%" src="img/mobil4.jpg" />
+                <img width="12%" src="img/mobil5.jpg" />
             </div>
             <div>
-                <img width="30%" src="img/ucboyut14.png" />
-                <video width="30%" src="vid/video1.mkv" controls></video>
-                <video width="30%" src="vid/video2.mkv" controls></video>
+                <img width="12%" src="img/mobil6.jpg" />
+                <img width="12%" src="img/mobil7.jpg" />
+                <img width="12%" src="img/mobil8.png" />
+                <img width="12%" src="img/mobil9.png" />
+                <img width="12%" src="img/mobil10.png" />
+            </div>
+            <h3>Logos</h3>
+            <div>
+                <img width="10%" src="img/mobil11.png" />
+                <img width="10%" src="img/mobil12.png" />
+            </div>
+            <h3>Videos</h3>
+            <div>
+                <video width="25%" src="vid/video1.mkv" controls></video>
+                <video width="25%" src="vid/video2.mkv" controls></video>
+                <video width="25%" src="vid/video3.mp4" controls></video>
             </div>
             <!--<iframe width="720" height="480" src="https://www.youtube.com/embed/pka-EMhfD-8" title="Animation"
                 frameborder="0"
@@ -212,7 +238,7 @@
                 allowfullscreen></iframe>-->
         </div>
     </main>
-    <footer style="text-align:center;font-family:Arial;margin:10px"><i><b>Copyright © 2023.</b></i></footer>
+    <!--<footer style="text-align:center;font-family:Poppins;margin:10px"><i><b>Copyright © 2023.</b></i></footer>-->
     <script src="piggame.js"></script>
     <script src="jumble.js"></script>
     <script src="guess.js"></script>

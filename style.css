@@ -12,27 +12,36 @@ body {
 .navigation {
     text-align: center;
     font-family: Poppins, Geneva, Verdana, sans-serif;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .description {
     text-align: center;
     font-family: Poppins, Geneva, Verdana, sans-serif;
-    padding-top: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 4px;
+}
+
+.pig-game-desc {
+    text-align: center;
+    border-radius: 9px;
+    font-size: 14pt;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-color: #c7365f;
+    padding: 1px;
 }
 
 .navigation .nav_button {
     display: inline-block;
     color: rgb(36, 36, 36);
-    font-size: 15pt;
+    font-size: 18pt;
     cursor: pointer;
-    margin: 10px;
+    margin: 20px;
 }
 
 .navigation p:hover {
-    text-decoration: underline;
+    text-decoration: overline;
+    color: #dd6e13;
 }
 
 .hidden {
@@ -40,11 +49,12 @@ body {
 }
 
 .content {
-    margin: auto;
+    /*margin: auto;*/
     width: auto;
     display: block;
 }
 
 .portfolio {
     text-align: center;
+    font-family: Poppins, Geneva, Verdana, sans-serif;
 }
