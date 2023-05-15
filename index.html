@@ -10,13 +10,15 @@
     <link href="piggame.css" rel="stylesheet" />
     <link href="jumble.css" rel="stylesheet" />
     <link href="guess.css" rel="stylesheet" />
+    <link href="warcraft.css" rel="stylesheet" />
+    <link href="memorygame.css" rel="stylesheet" />
     <link rel="icon" href="img/favicon.png">
 </head>
 
 <body>
     <div class="navigation">
         <div class="icon">
-            <img width=150px src="img/sitelogo.png" />
+            <img width=150px src="img/sitelogo.png"/>
             <!--<h3>Welcome! Below, you can find some of my 3D design and JavaScript projects.</h3>-->
         </div>
         <div class="butonlar">
@@ -24,6 +26,8 @@
             <p class="nav_button" id="jumbleButton">Jumble</p>
             <p class="nav_button" id="diceButton">Dice Game</p>
             <p class="nav_button" id="guessButton">Guess My Number</p>
+            <p class="nav_button" id="warcraftButton">World of Warcraft</p>
+            <p class="nav_button" id="memoryGameButton">Memory Game</p>
         </div>
     </div>
     <main class="content">
@@ -237,13 +241,81 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>-->
         </div>
+        <div class="memorygame hidden">
+            <h2>Work in progress. Memory Game™</h2>
+        </div>
+        <div class="warcraft hidden">
+            <p>world of Warcraft Class Picker. Work in progress.</p>            
+            <img width=50px src="img/horde_icon.png"/>
+            <div class="wowraces">
+                <table>
+                    <tr>
+                        <td><button class="raceButton1">Orc</button></td>
+                        <td><button class="raceButton2">Tauren</button></td>
+                        <td><button class="raceButton3">Troll</button></td>
+                        <td><button class="raceButton4">Undead</button></td>
+                        <td><button class="raceButton5">Blood Elf</button></td>
+                        <td><button class="raceButton6">Goblin</button></td>
+                        <td><button class="raceButton7">Pandaren</button></td>
+                        <td><button class="raceButton8">Highmountain Tauren</button></td>
+                        <td><button class="raceButton9">Zandalari Troll</button></td>
+                        <td><button class="raceButton10">Vulpera</button></td>
+                        <td><button class="raceButton11">Mag'har Orc</button></td>
+                        <td><button class="raceButton12">Nightborne</button></td>
+                        <td><button class="raceButton13">Dracthyr</button></td>
+                    </tr>
+                </table>
+            </div>    
+            <img width=50px src="img/alliance_icon.png"/>
+            <div class="wowraces">
+                <table>
+                    <tr>
+                        <td><button class="raceButton14">Human</button></td>
+                        <td><button class="raceButton15">Nigth Elf</button></td>
+                        <td><button class="raceButton16">Dwarf</button></td>
+                        <td><button class="raceButton17">Gnome</button></td>
+                        <td><button class="raceButton18">Draenei</button></td>
+                        <td><button class="raceButton19">Worgen</button></td>
+                        <td><button class="raceButton20">Pandaren</button></td>
+                        <td><button class="raceButton21">Void Elf</button></td>
+                        <td><button class="raceButton22">Mechagnome</button></td>
+                        <td><button class="raceButton23">Kul Tiran</button></td>
+                        <td><button class="raceButton24">Dark Iron Dwarf</button></td>
+                        <td><button class="raceButton25">Lightforged Draenei</button></td>
+                        <td><button class="raceButton26">Dracthyr</button></td>
+                    </tr>
+                </table>
+            </div>
+            <img width=50px src="img/wow_icon.png"/>
+            <div class="wowclasses">
+                <table>
+                    <tr>
+                        <td><button class="classButton1">Death Knight</button></td>
+                        <td><button class="classButton2">Demon Hunter</button></td>
+                        <td><button class="classButton3">Druid</button></td>
+                        <td><button class="classButton4">Mage</button></td>
+                        <td><button class="classButton5">Paladin</button></td>
+                        <td><button class="classButton6">Warrior</button></td>
+                        <td><button class="classButton7">Rogue</button></td>
+                        <td><button class="classButton8">Evoker</button></td>
+                        <td><button class="classButton9">Monk</button></td>
+                        <td><button class="classButton10">Priest</button></td>
+                        <td><button class="classButton11">Shaman</button></td>
+                        <td><button class="classButton12">Warlock</button></td>
+                        <td><button class="classButton13">Hunter</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
     <!--<footer style="text-align:center;font-family:Poppins;margin:10px"><i><b>Copyright © 2023.</b></i></footer>-->
-    <script src="piggame.js"></script>
+    <script src="script.js"></script>
     <script src="library.js"></script>
     <script src="jumble.js"></script>
+    <script src="piggame.js"></script>
     <script src="guess.js"></script>
-    <script src="script.js"></script>
+    <script src="warcraft.js"></script>
+    <script src="memorygame.js"></script>
 </body>
 
 </html>
