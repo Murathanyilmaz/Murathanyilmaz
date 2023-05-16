@@ -2,3 +2,16 @@
     font-family: Poppins, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+
+.memorygame table {
+    margin: auto;
+}
+
+.memorygame button {
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    background-color: rgb(220, 183, 228);
+    transition-duration: 0.3s;
+}
