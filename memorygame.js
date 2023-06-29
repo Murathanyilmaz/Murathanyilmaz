@@ -36,6 +36,7 @@ gameCards.forEach(function (value, index) {
             if (counter == 0) {
                 selectedCard1Index = index;
                 selectedCard1 = gameCards[index].className;
+                gameCards[selectedCard1Index].disabled = true;
                 counter++;
                 playable = true;
             }
@@ -58,6 +59,7 @@ gameCards.forEach(function (value, index) {
                     setTimeout(function () {
                         gameCards[selectedCard1Index].innerHTML = "";
                         gameCards[selectedCard2Index].innerHTML = "";
+                        gameCards[selectedCard1Index].disabled = false;
                         playable = true;
                     } ,1000)
                 }
