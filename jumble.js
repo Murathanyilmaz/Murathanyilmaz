@@ -21,8 +21,6 @@ let lifeLeft = 6;
 let letterLocation = 1;
 let currentPoint = 0;
 
-console.log(wotdArray);
-
 var deleteEvent = function () {
     letterLocation--;
     document.querySelector(`#harf${letterLocation}`).textContent = "";
@@ -137,8 +135,8 @@ var enterEvent = function () {
 }
 
 function endgame(sonuc) {
-    const bildir = sonuc ? "Tebrikler kazandınız!" : "Kaybettiniz :(";
+    const bildir = sonuc ? "Congratulations!" : "You have lost.";
     alert(`${bildir}
-Doğru kelime: ${wordOfTheDay}`);
+    Word of the Day: ${wordOfTheDay}`);
     endJumble = true;
 }
