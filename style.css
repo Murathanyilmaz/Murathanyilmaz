@@ -73,6 +73,11 @@ body {
     font-family: Poppins, Geneva, Verdana, sans-serif;
 }
 
+.unity {
+    text-align: center;
+    font-family: Poppins, Geneva, Verdana, sans-serif;
+}
+
 #fullpage {
     display: none;
     position: absolute;
