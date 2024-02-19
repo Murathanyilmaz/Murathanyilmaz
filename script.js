@@ -79,4 +79,6 @@ function dropDownFunction() {
 }
 function dropDownFunction2() {
     document.getElementById("myDropdown").classList.remove("show");
+    document.getElementById("arrow").classList.remove("fa-caret-down");
+    document.getElementById("arrow").classList.add("fa-caret-up");  
 }
