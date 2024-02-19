@@ -61,17 +61,6 @@ memoryGameButton.addEventListener("click", () => {
     document.querySelector(".memorygame").classList.remove("hidden");
 })
 
-function getPics() {} //just for this demo
-const imgs = document.querySelectorAll('.models img');
-const fullPage = document.querySelector('#fullpage');
-
-imgs.forEach(img => {
-  img.addEventListener('click', function() {
-    /*fullPage.style.backgroundImage = 'url(' + img.src + ')';
-    fullPage.style.display = 'block';*/
-  });
-});
-
 function dropDownFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
     document.getElementById("arrow").classList.toggle("fa-caret-down");
@@ -79,6 +68,6 @@ function dropDownFunction() {
 }
 function dropDownFunction2() {
     document.getElementById("myDropdown").classList.remove("show");
-    document.getElementById("arrow").classList.remove("fa-caret-down");
-    document.getElementById("arrow").classList.add("fa-caret-up");  
+    document.getElementById("arrow").classList.add("fa-caret-down");
+    document.getElementById("arrow").classList.remove("fa-caret-up");  
 }
