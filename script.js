@@ -1,6 +1,6 @@
 "use strict"
 const portfolioButton = document.getElementById("portfolioButton");
-const unitybutton = document.getElementById("unitybutton");
+const unityButton = document.getElementById("unityButton");
 const jumbleButton = document.getElementById("jumbleButton");
 const diceButton = document.getElementById("diceButton");
 const guessButton = document.getElementById("guessButton");
@@ -15,7 +15,7 @@ portfolioButton.addEventListener("click", () => {
     document.querySelector(".guess-game").classList.add("hidden");
     document.querySelector(".memorygame").classList.add("hidden");
 })
-unitybutton.addEventListener("click", () => {
+unityButton.addEventListener("click", () => {
     document.querySelector(".portfolio").classList.add("hidden");
     document.querySelector(".unity").classList.remove("hidden");
     document.querySelector(".jumble-game").classList.add("hidden");
